@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dead Rush</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        
+        <!-- UI Overlay -->
+        <div id="ui-overlay">
+            <div id="stats">
+                <div id="health-bar-container">
+                    <div id="health-bar"></div>
+                    <span id="health-text">100/100</span>
+                </div>
+                <div id="xp-bar-container">
+                    <div id="xp-bar"></div>
+                    <span id="xp-text">0/100</span>
+                </div>
+                <div id="level-display">Nivell 1</div>
+                <div id="timer-display">Temps: 0s</div>
+            </div>
+        </div>
+
+        <!-- Pantalla d'inici -->
+        <div id="start-screen" class="screen">
+            <h1>DEAD RUSH</h1>
+            <p>Sobrevius tant com puguis</p>
+            <button id="start-button">Començar</button>
+            <p class="controls">WASD o Fletxes per moure't</p>
+        </div>
+
+        <!-- Pantalla de Game Over -->
+        <div id="gameover-screen" class="screen hidden">
+            <h2>Game Over</h2>
+            <p>Has sobreviscut <span id="final-time">0</span> segons</p>
+            <p>Nivell aconseguit: <span id="final-level">1</span></p>
+            <button id="restart-button">Tornar a començar</button>
+        </div>
+
+        <!-- Panell de pujada de nivell (millores) -->
+        <div id="levelup-screen" class="screen hidden">
+            <h2>Puja de nivell!</h2>
+            <p>Tria una millora:</p>
+            <div id="upgrade-options" class="upgrade-container">
+                <!-- Les opcions s'omplen dinàmicament amb JS -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
