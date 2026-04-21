@@ -21,35 +21,6 @@ Microvideojoc de supervivència amb hordes de zombies desenvolupat per al projec
 - **JavaScript (ES6+)**: lògica del joc, bucle d'animació, gestió de col·lisions i estat.
 - **Canvas API**: renderitzat 2D de tots els elements del joc.
 
-## 📁 Estructura del projecte
-
-Dead Rush/
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ ├── main.js
-│ ├── classes/
-│ │ ├── Jugador.js
-│ │ ├── Enemic.js
-│ │ ├── Bala.js
-│ │ ├── Gemma.js
-│ │ └── Millora.js
-│ └── utils.js
-├── assets/
-├── docs/
-│ ├── 01_idea_i_abast.md
-│ ├── 02_model_del_joc.md
-│ ├── 03_entorn_i_prototip.md
-│ ├── 04_proves_i_depuracio.md
-│ ├── 05_millores_i_reflexio_final.md
-│ ├── IA_log.md
-│ └── diagrames/
-│ ├── diagrama_classes.png
-│ └── diagrama_comportament.png
-├── README.md
-└── .gitignore
-
 ## 🚀 Com executar el joc
 
 1. **Clonar el repositori:**
